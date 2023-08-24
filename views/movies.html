@@ -1,0 +1,69 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/movie.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+    <div id="searchdrop"></div>
+    <br />
+    <div id="iframemovie"></div>
+    <script>
+        function navbarcont() {
+            const searchdrop = document.getElementById("searchdrop");
+            const searchdropurl = "../components/searchdrop.html";
+
+            fetch(searchdropurl)
+                .then((response) => response.text())
+                .then((html) => {
+                    searchdrop.innerHTML = html;
+                });
+        }
+        navbarcont();
+
+        function navcontain() {
+            const iframemovie = document.getElementById("iframemovie");
+            const iframemovieurl = "../components/iframemovie.html";
+
+            fetch(iframemovieurl)
+                .then((response) => response.text())
+                .then((html) => {
+                    iframemovie.innerHTML = html;
+                });
+        }
+        navcontain();
+
+        function addToRecentlyWatched(videoURL) {
+            let recentlyWatched = JSON.parse(localStorage.getItem('recentlyWatched')) || [];
+
+            if (!recentlyWatched.includes(videoURL)) {
+                recentlyWatched.unshift(videoURL);
+
+                localStorage.setItem('recentlyWatched', JSON.stringify(recentlyWatched));
+            } else {
+                alert('Cilck on the video to play');
+            }
+        }
+
+        function addToMyList(videoURL) {
+            let myList = JSON.parse(localStorage.getItem('myList')) || [];
+
+            if (!myList.includes(videoURL)) {
+                myList.unshift(videoURL);
+
+                localStorage.setItem('myList', JSON.stringify(myList));
+            } else {
+                alert('Added to mylist..!');
+            }
+        }
+    </script>
+
+</body>
+
+</html>

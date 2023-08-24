@@ -1,0 +1,22 @@
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 10px;
+    border: #e2d9d9;
+    padding: 50px;
+    transform: translate(-50%, -50%);
+    background: rgba(22, 21, 21, 0.396);
+}
+
+body {
+    background-color: azure;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+span {
+    font-weight: bold;
+}

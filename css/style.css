@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-image: url("../images/netflix.jpg");
+}
+
+.form-wrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 10px;
+    border: #e2d9d9;
+    padding: 70px;
+    width: 400px;
+    transform: translate(-50%, -50%);
+    background: rgba(22, 21, 21, 0.396);
+}
+
+.form-wrapper h2 {
+    color: #fff;
+    font-size: 2rem;
+    padding: 15px;
+    text-align: center;
+}
+
+form .form-control {
+    height: 50px;
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.form-control input {
+    height: 100%;
+    width: 100%;
+    background: #e2d9d9;
+    border-radius: 10px;
+    font-size: 1rem;
+    padding: 0 20px;
+}
+
+form button {
+    width: 100%;
+    padding: 16px 0;
+    font-size: 1rem;
+    background: #e11c25;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin: 25px 0 10px;
+    cursor: pointer;
+    transition: 0.1s ease;
+}
+
+form button:hover {
+    background: #c408118d;
+}
+
+form .form-help {
+    display: flex;
+    justify-content: space-between;
+}
+
+form .remember-me,
+p,
+a {
+    color: #b3b3b3;
+    display: flex;
+}

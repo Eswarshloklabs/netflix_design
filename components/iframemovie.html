@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+      
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h2{
+            color: rgb(235, 23, 23);
+        }
+
+        .video-card:hover {
+            transform: scale(0.98);
+            background-color: rgba(238, 234, 239, 0.727);
+        }
+
+        .video-card {
+            max-width: 600px;
+            margin: 10px auto;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .video-card iframe {
+            width: 100%;
+            height: 250px;
+        }
+
+        .video-card-body {
+            padding: 10px;
+        }
+
+        .button-container {
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+   
+    <main class="container">
+        <h2>Hollywood Movies</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="video-card">
+                    <iframe src="https://www.youtube.com/embed/phhChNgoK3w" title="Movie 1" frameborder="1"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                    <div class="video-card-body">
+                        <div class="button-container">
+                            <button class="btn btn-primary" onclick="addToRecentlyWatched('https://www.youtube.com/embed/phhChNgoK3w')">Watch</button>
+                            <button class="btn btn-secondary" onclick="addToMyList('https://www.youtube.com/embed/phhChNgoK3w')">My List</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="video-card">
+                    <iframe src="https://www.youtube.com/embed/fOufa4ao1zk" title="Movie 2" frameborder="1"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                    <div class="video-card-body">
+                        <div class="button-container">
+                            <button class="btn btn-primary" onclick="addToRecentlyWatched('https://www.youtube.com/embed/fOufa4ao1zk')">Watch</button>
+                            <button class="btn btn-secondary" onclick="addToMyList('https://www.youtube.com/embed/fOufa4ao1zk')">My List</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="video-card">
+                    <iframe src="https://www.youtube.com/embed/Ohol79ZqfBk" title="Movie 3" frameborder="1"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                    <div class="video-card-body">
+                        <div class="button-container">
+                            <button class="btn btn-primary" onclick="addToRecentlyWatched('https://www.youtube.com/embed/Ohol79ZqfBk')">Watch</button>
+                            <button class="btn btn-secondary" onclick="addToMyList('https://www.youtube.com/embed/Ohol79ZqfBk')">My List</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <br><br>
+    <h2>Tamil Dubbed Movies</h2>
+    <br>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/FJtcpkBW4aA" title="Movie 1" frameborder="1"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+                <div class="video-card-body">
+                    <div class="button-container">
+                        <button class="btn btn-primary" onclick="addToRecentlyWatched('https://www.youtube.com/embed/FJtcpkBW4aA')">Watch</button>
+                        <button class="btn btn-secondary" onclick="addToMyList('https://www.youtube.com/embed/FJtcpkBW4aA')">My List</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/NebQZkkIYPc" title="Movie 2" frameborder="1"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+                <div class="video-card-body">
+                    <div class="button-container">
+                        <button class="btn btn-primary" onclick="addToRecentlyWatched('https://www.youtube.com/embed/NebQZkkIYPc')">Watch</button>
+                        <button class="btn btn-secondary" onclick="addToMyList('https://www.youtube.com/embed/NebQZkkIYPc')">My List</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/gGYG2E0ZaUI" title="Movie 3" frameborder="1"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+                <div class="video-card-body">
+                    <div class="button-container">
+                        <button class="btn btn-primary" onclick="addToRecentlyWatched('https://www.youtube.com/embed/gGYG2E0ZaUI')">Watch</button>
+                        <button class="btn btn-secondary" onclick="addToMyList('https://www.youtube.com/embed/gGYG2E0ZaUI')">My List</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+    <h2>Tamil Movies</h2>
+    <br>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/8VNc-kMbhUE" title="Movie 1" frameborder="1"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+                <div class="video-card-body">
+                    <div class="button-container">
+                        <button class="btn btn-primary" onclick="addToRecentlyWatched('https://www.youtube.com/embed/8VNc-kMbhUE')">Watch</button>
+                        <button class="btn btn-secondary" onclick="addToMyList('https://www.youtube.com/embed/8VNc-kMbhUE')">My List</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/tj42rIYewL4" title="Movie 2" frameborder="1"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+                <div class="video-card-body">
+                    <div class="button-container">
+                        <button class="btn btn-primary" onclick="addToRecentlyWatched('https://www.youtube.com/embed/tj42rIYewL4')">Watch</button>
+                        <button class="btn btn-secondary" onclick="addToMyList('https://www.youtube.com/embed/tj42rIYewL4')">My List</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/0HSESNhUt0A" title="Movie 3" frameborder="1"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+                <div class="video-card-body">
+                    <div class="button-container">
+                        <button class="btn btn-primary" onclick="addToRecentlyWatched('https://www.youtube.com/embed/0HSESNhUt0A')">Watch</button>
+                        <button class="btn btn-secondary" onclick="addToMyList('https://www.youtube.com/embed/0HSESNhUt0A')">My List</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+</body>
+
+</html>

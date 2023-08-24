@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Login Page </title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="form-wrapper">
+        <h2>Log In</h2>
+        <form id="myform">
+            <div class="form-control">
+                <input type="email" id="email" placeholder="Email or Phone Number"
+                    pattern="^[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{3,}$" required>
+            </div>
+            <div class="form-control">
+                <input type="password" id="password" placeholder="Password" required>
+            </div>
+            <button type="submit">Log In</button>
+            <div class="form-help">
+                <div class="remember-me">
+                    <input type="checkbox" id="remember-me">
+                    <label for="remember-me">Remember me</label>
+                </div>
+                <a href="#">Need help?</a>
+            </div>
+        </form>
+        <br>
+        <p>New to Netflix? <a href="./signinpage.html">Sign up now</a></p>
+    </div>
+    <script type="text/javascript">
+        const access = document.getElementById("myform")
+        access.addEventListener("submit", (event) => {
+            event.preventDefault();
+            if (access.checkValidity()) {
+                alert("Log in successful");
+                window.location.replace("./myhome.html")
+            }
+        });
+
+    </script>
+</body>
+
+</html>
